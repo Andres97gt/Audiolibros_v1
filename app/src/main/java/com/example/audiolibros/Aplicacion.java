@@ -1,6 +1,10 @@
 package com.example.audiolibros;
 
-public class Aplicacion {
+import android.app.Application;
+
+import java.util.Vector;
+
+public class Aplicacion extends Application {
     private Vector<Libro> vectorLibros;
     private AdaptadorLibros adaptador;
 

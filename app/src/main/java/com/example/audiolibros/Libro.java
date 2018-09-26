@@ -3,6 +3,7 @@ package com.example.audiolibros;
 import java.util.Vector;
 
 public class Libro {
+
     public String titulo;
     public String autor;
     public int recursoImagen;
@@ -29,13 +30,14 @@ public class Libro {
     public static Vector<Libro> ejemploLibros(){
         final String SERVIDOR = "http://www.dcomg.upv.es/~jtomas/android/audiolibros/";
         Vector<Libro> libros = new Vector<Libro>();
-        libros.add(new Libro("kappa", "Akutagawa", android.R.drawable.kappa, SERVIDOR+"kappa.mp3", Libro.G_S_XIX, false, false));
+        libros.add(new Libro("kappa", "Akutagawa", R.drawable.kappa, SERVIDOR+"kappa.mp3", Libro.G_S_XIX, false, false));
         libros.add(new Libro("Avecilla", "Alas Clarin, Leopoldo", R.drawable.avecilla, SERVIDOR+"avecilla.mp3", Libro.G_S_XIX, true, false));
         libros.add(new Libro("Divina Comedia", "Dante", R.drawable.divinacomedia, SERVIDOR+"divina_comedia.mp3", Libro.G_EPICO, true, false));
         libros.add(new Libro("Viejo Pancho, El", "Alonso y Trelles Jose", R.drawable.viejo_pancho, SERVIDOR+"viejo_pancho.mp3", Libro.G_S_XIX, true, true));
         libros.add(new Libro("Cancion de Rolando", "Anonimo", R.drawable.cancion_rolando, SERVIDOR+"cancion_rolando.mp3", Libro.G_EPICO, false, true));
         libros.add(new Libro("Matrimonio de sabuesos", "Agata Christie", R.drawable.matrimonio_sabuesos, SERVIDOR+"matrim_sabuesos.mp3", Libro.G_SUSPENSE, false, true));
-        libros.add(new Libro("La iliada", "Homero", R.drawable.iliada, SERVIDOR+"la_iliada.mp3", Libro.G_EPICO, true, false));
+        libros.add(new Libro("La iliada",  "Homero", R.drawable.iliada, SERVIDOR+"la_iliada.mp3", Libro.G_EPICO, true, false));
+
         return libros;
     }
 

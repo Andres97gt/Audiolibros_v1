@@ -22,6 +22,7 @@ public class MainActivity extends AppCompatActivity {
         recyclerView.setAdapter(app.getAdaptador());
         layoutManager = new GridLayoutManager(this,2);
         recyclerView.setLayoutManager(layoutManager);
+
         app.getAdaptador().setOnItemClickListener(new View.OnClickListener(){
             @Override public void onClick(View v) {
                 Toast.makeText(MainActivity.this, "Seleccionado el elemento: " +
